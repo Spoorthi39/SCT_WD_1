@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s, padding 0.3s;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff6347; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#home {
+    background-image: url('https://example.com/home.jpg');
+}
+
+#about {
+    background-image: url('https://example.com/about.jpg');
+}
+
+#services {
+    background-image: url('https://example.com/services.jpg');
+}
+
+#reservations {
+    background-image: url('https://example.com/reservations.jpg');
+}
+
+#contact {
+    background-image: url('https://example.com/contact.jpg');
+}
